@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/android.css">
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script src="../js/connection.js"></script>
+	<script src="js/index.js"></script>
+
+</head>
+<body>
+
+	<div id="android_header">
+		<div id="android_header_left">
+
+			 <div id="mySidepanel" class="sidepanel">
+				<div class="android_menu_logo"></div> 
+			 
+				<div class="sidepanel-content">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					<a href="index.html">Home</a>
+					<a href="template/service.html">Courses</a>
+					<a href="template/contact.html">Contact</a>
+					<a href="template/apply.html">Apply</a>
+				</div>
+
+			 </div>
+
+		   <button class="openbtn" id="androidbtn" onclick="openNav()">☰</button>	
+		   
+		</div>
+		
+		<div id="android_header_right">
+			<a href="https://www.instagram.com/caddesk_chikkabanavara?igsh=MWJtMWI3N2RxY21vaA=="><img src="media/18.png" id="social_icon"></a>
+			<a href="https://www.facebook.com/profile.php?id=100086098930633&mibextid=ZbWKwL"><img src="media/19.png" id="social_icon"></a>
+			<a href=""><img src="media/20.png" id="social_icon"></a>
+		</div>
+		
+		
+    </div>
+	<div class="android_header_image" id="unhide">
+		<div>
+			 <img src="media/h11 - Copy.png" class="a_image">
+		</div>
+		<div class="header_content">
+			<h1>About us</h1>
+			<p>Gurutva Academy is dedicated to
+				providing a comprehensive education
+				that prepares students for success in
+				their future endeavors.
+				We strive to create a welcoming and
+				inclusive environment where all
+				students can thrive.</p>
+		</div>
+	</div>
+
+	<div class="header_con">
+
+		<div class="header_con_left"> 
+		
+
+	    </div>
+
+		<div class="header_con_middle_index">
+			<button onclick="window.location.href='index.html'; ">Home</button>
+			<button onclick="window.location.href='template/service.html'; ">Courses</button>
+			<button onclick="window.location.href='template/contact.html'; ">Contact</button>
+			<button onclick="window.location.href='template/apply.html'; ">Apply</button>
+			<button onclick="window.location.href='template/login.html'; ">Login</button>				
+	    </div>	
+
+	    <div class="header_con_right">
+			
+	    </div>	
+
+	</div>
+
+	<div class="about_us_con">
+
+		<div class="about_us_con_left">
+             <h2>Vision</h2>
+             <p>At our Academy, we believe that every
+				student has the potential to achieve
+				greatness.</p> 
+
+		</div>
+		<div class="about_us_con_right">
+			
+            <h2 class="mission_heading" >Mission</h2>
+             <p>With our experienced and passionate
+				teachers, state-of-the-art facilities, and
+				diverse student body, we are confident
+				that we can help our students reach their
+				full potential.</p>
+		</div>
+		
+
+	</div>
+
+
+	<div class="service_con">
+		<div class="service_heading">
+			<h2>Services</h2>
+		</div>
+	
+		<div id="s_content">
+	    	<div id="child">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      
+                    <!-- <p>Technical training</p> -->
+					<img class="s_img" src="media/11.png">
+
+				    </div>
+				    <div class="flip-card-back">
+				     <h2>Technical Training</h2>
+                         	
+                     <button onclick="window.location.href='template/service.html'; ">Know More</button>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div id="child">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      
+					<img class="s_img" src="media/13.png" style="height: 230px;">
+
+				    </div>
+				    <div class="flip-card-back">
+						<h2>Spoken English</h2>
+
+						<button onclick="window.location.href='template/service.html'; ">Know More</button>
+                         	
+
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div id="child">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      
+						<img class="s_img" src="media/14.png">
+
+				    </div>
+				    <div class="flip-card-back">
+						<h2>Navodaya Training</h2>
+                         	
+						<button onclick="window.location.href='template/service.html'; ">Know More</button>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div id="child">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      
+						<img class="s_img" src="media/12.png">
+
+				    </div>
+				    <div class="flip-card-back">
+						<h2>Digital Marketing</h2>
+						<button onclick="window.location.href='template/service.html'; ">Know More</button>       	
+
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<div class="certificate_con">
+
+		<div class="certificate_con_left">
+			
+           <img src="media/certificate.png" class="c_img">
+		</div>
+
+		<div class="certificate_con_right">
+
+			<h1>Certification With us</h1> 
+			<P>Gurutva Academy's courses are designed to provide comprehensive training and practical skills 
+				that prepare students for a successful career in their chosen field. The academy's expert faculty, 
+				industry-relevant curriculum, and hands-on learning approach make it a top choice for students looking to enhance 
+				their knowledge and skills.			
+				It is not just a place to learn marketing software, but a launchpad for your career in this exciting and dynamic field.</P>
+	
+		</div>
+		
+
+	</div>
+
+	<div class="contact_con">
+
+		<div class="contact_con_left">
+		   <img src="media/contact_left.png" class="contact_left_img">	  
+        
+		</div>
+
+		<div class="contact_con_right">
+
+			<div class="contact_con_right_content">
+				 <p>Happy To Serve</p>
+				 <div class="first">
+                    <p>200 + Students</p>
+					
+				 	
+				 </div>
+				 <div class="second">
+					<p>2 + Partners</p>
+				 </div>
+				 <div class="third">
+					<p>14 + Projects</p>
+				 </div>
+			</div>
+
+			<div class="contact_con_right_content" id="hide">
+				 <p>Find us at</p>
+				 <div class="first1" id="hide">
+				 	 <a href="https://www.instagram.com/gurutvaacademy?igsh=MTFicHBqYmdkN2U4dg"><img src="media/instagram.png"></a>
+				 </div>
+				 <div class="second1" id="hide">
+					<a href=""><img src="media/instagram.png"></a>
+				 </div>
+				 <div class="third1" id="hide">
+					<a href=" https://maps.app.goo.gl/6uFBpyhYmHAQ8uNd7
+					"><img src="media/map.png"></a>
+				 </div>
+			</div>
+
+			<div class="contact_con_right_content" id="unused_web">
+				 <p>Reach us</p>
+				 <div class="reach_mini_con">
+					<div class="reach_mini_con_left">
+						<p>Call us : <b>7892590962/9886679194 </b> <br>
+						
+						mail us: <b>enquiry@gurutva-academy.in </b></p>
+					</div>
+					<div class="reach_mini_con_right">
+						<p>Address: PK Towers,court road, Doddaballapur,Banglore Rural-561203
+						</p>
+						
+					</div>
+				
+				 </div>
+				
+			</div>
+			
+			
+		</div>
+		
+	</div>
+
+
+
+	<div class="testimony_con">
+
+		<div class="slideshow-container">
+			
+			<div class="mySlides fade" id="t_back">
+		  
+				<img src="media/testimonial_back.png" id="hide">
+				<img src="media/t1.png" id="unhide" class="android_t1">
+
+			</div>
+
+			<div class="mySlides fade" id="t_back">
+			     
+				<img src="media/testimonial_back1.png" id="hide">
+				<img src="media/t2.png" id="unhide" class="android_t1">
+
+			</div>
+
+			
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			</div>
+
+			<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			    dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
+		
+	</div>
+
+	<div class="faq_container">
+		<div class="faq_container_heading">
+			<h1>Why Choose Us</h1>
+		</div>
+		<button class="collapsible">Expert Faculty</button>
+            <div class="content_ga">
+              <div>
+				 Our instructors are industry experts with extensive experience in marketing software. They bring real-world insights and practical knowledge to the classroom, ensuring you receive the most relevant and up-to-date training.
+
+              </div>
+            </div>
+			
+            <button class="collapsible">Comprehensive Curriculum </button>
+            <div class="content_ga">
+             <div>
+				Our curriculum is designed to cover all aspects of marketing software, from the basics to advanced techniques. You'll learn everything you need to know to excel in this field, including hands-on experience with popular software tools.
+			</div>
+            </div>
+
+			<button class="collapsible">Practical Training</button>
+            <div class="content_ga">
+              <div>
+				We believe in learning by doing. That's why our courses include plenty of practical exercises and projects to help you apply what you've learned in a real-world setting. This approach ensures that you not only understand the concepts but also know how to implement them effectively
+              </div>
+            </div>
+
+            <button class="collapsible">Career Support</button>
+            <div class="content_ga">
+                <div>
+					Our support doesn't end with the completion of your course. We offer career counseling and placement assistance
+					 to help you kickstart your career in marketing software. Whether you're looking for a job or starting your own venture,
+					  we're here to guide you every step of the way.
+              </div>
+            </div>
+
+			<button class="collapsible">Flexible Learning Options</button>
+            <div class="content_ga">
+                <div>
+					We understand that everyone's schedule is different. That's why we offer flexible learning options, 
+					including online courses and weekend classes, so you can pursue your passion for marketing software without 
+					compromising your other commitments
+              </div>
+            </div>
+			<button class="collapsible">Community and Networking</button>
+            <div class="content_ga">
+                <div>
+					Joining Gurutva Academy means becoming part of a vibrant community of like-minded individuals. You'll have the 
+					opportunity to network with industry professionals, attend workshops and seminars, and collaborate on projects,
+					 all of which can help you grow both personally and professionally.
+              </div>
+            </div>
+			<button class="collapsible">Affordable Fees</button>
+            <div class="content_ga">
+                <div>
+					Despite offering top-notch training and support, Gurutva Academy is committed to keeping its courses affordable.
+					 We believe that quality education should be accessible to everyone, and our pricing reflects that commitment.
+              </div>
+            </div>
+		
+	</div>
+
+
+	<div class="footer">
+
+		<div class="footer_left">
+           <img src="media/footer_logo.png" class="footer_icon">
+		</div>
+		<div class="footer_query">
+			<h3>Scan or Click to Apply</h3>
+			<a href="https://gurutva-academy.in/template/apply.html"><img src="media/apply.png"></a>
+
+		</div>
+
+		<div class="footer_right">
+			   <h3>Quick Links</h3>
+				<a href="index.html" > Home</a> <br>
+				<a href="template/service.html" > Courses</a> <br>
+				<a href="template/contact.html" > Contact</a>  <br>
+				<a href="template/apply.html" > Apply</a> <br>
+
+		</div>
+		
+
+	</div>
+
+	<div class="copyright_con">
+		<a href="https://www.k-akatechnology.in/"> Copyright @ K-AKA Technology Services ( KTS ) - 2024</a>
+	</div>
+	
+	<div id="flot_button">
+            <a class="c_flot_btn" href="https://wa.me/7892590962"> <img src="media/whatsapp.png" class="fix_contact_icon"></a>
+    </div>
+
+
+
+</body>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        } 
+        });
+    }
+</script>
+</html>

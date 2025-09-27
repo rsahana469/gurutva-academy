@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/android.css">
+
+
+</head>
+<body>
+
+
+	<!--   Implementing the modal effect for delay processing -->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+		   <img src="../media/proc.gif">
+		</div>
+	  
+	</div>
+	  
+
+
+	<div id="android_header">
+		<div id="android_header_left">
+
+			 <div id="mySidepanel" class="sidepanel">
+				<div class="android_menu_logo"></div> 
+			 
+				<div class="sidepanel-content">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					<a href="../index.html">Home</a>
+					<a href="../template/service.html">Courses</a>
+					<a href="../template/contact.html">Contact</a>
+					<a href="../template/apply.html">Apply</a>
+				
+					
+				</div>
+			 </div>
+
+		   <button class="openbtn" id="androidbtn" onclick="openNav()">☰</button>	
+		   
+		</div>
+		
+		<div id="android_header_right">
+			<a href="https://www.instagram.com/caddesk_chikkabanavara?igsh=MWJtMWI3N2RxY21vaA=="><img src="../media/18.png" id="social_icon"></a>
+			<a href="https://www.facebook.com/profile.php?id=100086098930633&mibextid=ZbWKwL"><img src="../media/19.png" id="social_icon"></a>
+			<a href=""><img src="../media/20.png" id="social_icon"></a>
+		</div>	
+    </div>
+
+	<div class="sec_android_header_image" id="unhide">
+		<div class="header_image">
+			 <img src="../media/a3.png" class="a_image">
+		</div>
+		<div class="header_content">
+			<h1>Apply Here!</h1>
+		</div>
+	</div>
+
+	
+	<div class="login_header_con" id="hide" style="margin-bottom: 3%;">		
+		<div class="apply_form">
+	
+			<h1 style="margin-bottom: 4%;">Authorised Login</h1>
+			<p id="message" style="font-weight: bold;"> </p>
+			<p>Enter Admin ID</p>
+			<input type="password" id="email_id" onfocus="reset()">
+			<p>Enter Password</p>
+			<input onfocus="reset()" type="password" id="password" > <br>
+			<button  onclick="login()" >Login</button>
+ 		</div>
+
+	</div>
+
+	<div class="pvt_con" id="home" >
+
+		<div class="login_content">
+			<button onclick="fetchcontactdataActivate()" id="c_btn">Contact Details</button>
+			<button onclick="fetchapplydataactivate()" id="a_btn">Apply Details</button>
+			<button onclick="logout()" id="logout_btn">LogOut</button>
+			<div class="contact_details" id="c_table"> 
+				<table border="1" id="contact_details_table"></table>
+			</div>
+	
+			<div class="apply_details" id="a_table" style="display: none; "  > 
+				<table border="1" id="apply_details_table"></table>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+ 
+
+	<div class="footer">
+
+		<div class="footer_left">
+           <img src="../media/footer_logo.png" class="footer_icon">
+		</div>
+		<div class="footer_query">
+			<h3>Scan or Click to Apply</h3>
+			<a href="https://gurutva-academy.in/template/apply.html"><img src="../media/apply.png"></a>
+
+		</div>
+		<div class="footer_right">
+			<h3>Quick Links</h3>
+			 <a href="../index.html" > Home</a> <br>
+			 <a href="service.html" > Courses</a> <br>
+			 <a href="contact.html" > Contact</a>  <br>
+			 <a href="apply.html" > Apply</a> <br>
+
+	 </div>
+		
+
+	</div>
+
+	<div class="copyright_con">
+		<a href="https://www.k-akatechnology.in/"> Copyright @ K-AKA Technology Services ( KTS ) - 2024</a>
+	</div>
+	
+	<div id="flot_button">
+            <a class="c_flot_btn" href="https://wa.me/7892590962"> <img src="../media/whatsapp.png" class="fix_contact_icon"></a>
+    </div>
+
+
+
+</body>
+
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script src="../js/connection.js"></script>
+	<script src="../js/index.js"></script>
+	<script type="text/javascript">
+		firebase.auth().onAuthStateChanged(function(user){
+		if(user)
+		{
+			document.getElementById("hide").style.display="none";
+			document.getElementById("home").style.display="block";
+			//fetch the details once the admin is active
+			fetchcontactdata();
+  			fetchapplydata();
+		}
+		
+	});
+	</script>
+	
+</html>
